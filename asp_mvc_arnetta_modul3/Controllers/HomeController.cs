@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
+using asp_mvc_arnetta_modul3.Security;
 
 namespace asp_mvc_arnetta_modul3.Controllers
 {
@@ -18,6 +17,14 @@ namespace asp_mvc_arnetta_modul3.Controllers
         {
             return View();
         }
-
+        [AuthorizeRoles("Admin")]
+        public ActionResult AdminOnly()
+        {
+            return View();
+        }
+        public ActionResult UnAuthorized()
+        {
+            return View();
+        }
     }
 }

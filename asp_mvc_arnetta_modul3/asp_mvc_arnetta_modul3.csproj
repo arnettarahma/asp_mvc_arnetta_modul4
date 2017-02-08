@@ -119,6 +119,9 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\Account\LogIn.cshtml" />
+    <Content Include="Views\Home\AdminOnly.cshtml" />
+    <Content Include="Views\Home\UnAuthorized.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -157,6 +160,7 @@
     <Compile Include="Models\EntityManager\UserManager.cs" />
     <Compile Include="Models\ViewModel\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\AuthorizeRoleAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
